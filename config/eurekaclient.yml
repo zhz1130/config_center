@@ -26,4 +26,4 @@ logging:
 management:
   security:
 #   关闭安全验证
-    enable: false
+    enabled: false
