@@ -21,21 +21,5 @@ spring:
         login-username: druid
         login-password: druid
 
-    http:
-      multipart:
-        enabled: true
-        max-file-size: 30MB
-        max-request-size: 30MB
-
-server:
-    port: 8072
-    servlet:
-#      context-path: /api
-      maxHttpHeaderSize: 10240000
-      maxHttpPostSize: 10240000
-tomcat:
-    maxHttpHeaderSize: 10240000
-    maxHttpPostSize: 10240000
-
 logging:
   path: /var/logs #配置日志生成路径
