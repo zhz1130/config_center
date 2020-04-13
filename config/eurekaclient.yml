@@ -24,10 +24,7 @@ spring:
 logging:
   path: /var/logs #配置日志生成路径
 management:
-  security:
-    #关闭安全验证，否则访问refresh端点时会提示权限不足
-    enabled: false
-  endpoint: 
+  endpoints:
     web:
       exposure:
-        include: refresh
+        include: bus-refresh
