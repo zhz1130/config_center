@@ -20,18 +20,6 @@ spring:
       stat-view-servlet: #访问监控网页的登录用户名和密码
         login-username: druid
         login-password: druid
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
-    listener: # 这里配置了重试策略
-      direct:
-        retry:
-          enabled: true
-      simple:
-        retry:
-          enabled: true
   zipkin:
 #   zipkin链路服务地址配置,配了消息地址就不需要了，直接从mq获取
 #     base-url: http://localhost:9411
